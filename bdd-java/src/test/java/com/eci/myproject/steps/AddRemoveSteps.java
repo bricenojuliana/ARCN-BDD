@@ -10,11 +10,11 @@ import static org.junit.Assert.assertTrue;
 import java.util.concurrent.TimeUnit;
 import com.eci.myproject.pages.AddRemoveElementsPage;;
 
-public class AddRemoveElementsSteps {
+public class AddRemoveSteps {
     WebDriver driver;
     AddRemoveElementsPage addRemovePage;
 
-    @Given("I am on the Add/Remove Elements page")
+    @Given("I am on the Add\\/Remove Elements page")
     public void i_am_on_the_add_remove_elements_page() {
         System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
         ChromeOptions options = new ChromeOptions();
