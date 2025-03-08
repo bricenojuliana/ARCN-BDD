@@ -12,17 +12,23 @@ Este laboratorio demuestra el uso de Desarrollo Guiado por Comportamiento (BDD) 
 ## Estructura del proyecto
 
 ```
-├── src
-│   ├── main
-│   │   ├── java
-│   │   │   └── com/eci/myproject/pages  # Clases Page Object
-│   ├── test
-│   │   ├── java
-│   │   │   └── com/eci/myproject/steps  # Definiciones de pasos Cucumber
-│   │   │   └── com/eci/myproject/runners # Ejecutores de pruebas
-│   │   ├── resources
-│   │   │   └── features  # Escenarios en Gherkin
+bdd-java
 ├── pom.xml  # Configuración de Maven y dependencias
+├── src
+│   ├── main/java/com/eci/myproject
+│   │   └── App.java  # Aplicación principal
+│   ├── test/java/com/eci/myproject
+│   │   ├── features  # Archivos .feature con escenarios BDD
+│   │   │   ├── add_remove.feature
+│   │   │   └── google_search.feature
+│   │   ├── pages  # Clases de Page Object Model (POM)
+│   │   │   └── AddRemoveElementsPage.java
+│   │   ├── runners  # Configuración de Cucumber
+│   │   │   └── TestRunner.java
+│   │   └── steps  # Implementación de pasos de prueba
+│   │       ├── AddRemoveSteps.java
+│   │       └── SearchSteps.java
+└── target  # Resultados de compilación y reportes de prueba
 ```
 
 ## Instalación y configuración
